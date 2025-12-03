@@ -3,7 +3,6 @@
 **Author:** Collin B. George, BS  
 **Affiliation:** Independent Clinical Researcher & Premedical Student
 (University of Washington; research not affiliated with or endorsed by UW Medicine)
-
 **Initial Publication Date:** November 27, 2025
 **Status:** Prepared for submission  
 **Word Count:** Approximately 3,130 words (excluding references)
