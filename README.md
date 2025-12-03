@@ -186,14 +186,12 @@ BibTeX entry:
 ## Contact Information
 
 **Collin B. George, BS**  
-Clinical Laboratory Technician  
-Department of Laboratory Medicine & Pathology  
+Independent Clinical Researcher & Medical School Applicant 
 University of Washington Medical Center  
 Seattle, WA, USA
 
 Email: cbg24@uw.edu  
 ORCID: [0009-0007-8162-6839](https://orcid.org/0009-0007-8162-6839)
-
 ---
 
 ## Funding and Conflicts of Interest
@@ -210,7 +208,7 @@ ORCID: [0009-0007-8162-6839](https://orcid.org/0009-0007-8162-6839)
 
 **Academic mentors:** Tom Carroll, PhD (intellectual mentorship)
 
-**Institutional support:** University of Washington for providing library access and research infrastructure; Pacific Northwest National Laboratory for foundational training in systems thinking and security
+**Institutional support:** University of Washington for providing library access and research infrastructure; Pacific Northwest National Laboratory for foundational training in systems thinking and security. (This project is independent and not affiliated with or endorsed by any institution.)
 
 This work received no direct funding. Complete acknowledgments are provided in the full manuscript.
 
