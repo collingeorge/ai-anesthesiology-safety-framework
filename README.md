@@ -1,7 +1,7 @@
 # Artificial Intelligence in Anesthesiology: A Neuroscience-Informed Safety Framework for Clinical Implementation
 
 - **Author:** Collin B. George, BS
-- **Affiliation:** Independent Clinical Researcher & Premedical Student
+- **Affiliation:** Independent Clinical Researcher & Medical School Applicant
 - (University of Washington; research not affiliated with or endorsed by UW Medicine)
 - **Initial Publication Date:** November 27, 2025
 - **Status:** Prepared for submission
