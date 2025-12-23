@@ -1,235 +1,300 @@
 # Artificial Intelligence in Anesthesiology: A Neuroscience-Informed Safety Framework for Clinical Implementation
 
-- **Author:** Collin B. George, BS
-- **Affiliation:** Independent Clinical Researcher & Medical School Applicant
-- (University of Washington; research not affiliated with or endorsed by UW Medicine)
-- **Initial Publication Date:** November 27, 2025
-- **Status:** Prepared for submission
-- **Word Count:** Approximately 3,130 words (excluding references)
-- **Status:** Prepared for submission  
+![Status](https://img.shields.io/badge/Status-Manuscript%20Prepared-blue)
+![Project Type](https://img.shields.io/badge/Project-Pre--Medical%20Research-blue)
+![Word Count](https://img.shields.io/badge/Words-~3,130-green)
+![Last Updated](https://img.shields.io/badge/Updated-November%202025-lightgrey)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-blue.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 ---
 
-## Description
+## Educational Use Only
 
-This repository contains the complete manuscript and supplementary materials for a comprehensive review examining safety frameworks for artificial intelligence in anesthesiology. The manuscript addresses the urgent need for neuroscience-informed safety standards in the context of rapid AI deployment in perioperative medicine, where closed-loop anesthetic delivery systems and automated monitoring have achieved regulatory approval despite incomplete understanding of their failure modes.
+This repository contains educational materials developed for medical school application portfolio purposes and is not intended for clinical application or regulatory guidance.
 
-The manuscript synthesizes evidence from neuroscience studies of consciousness, documented AI failures in clinical settings, and regulatory frameworks to develop the Framework for Responsible Intelligence in Clinical Anesthesiology (FRICA). Analysis reveals three systematic failure modes: misinterpretation of physiological signals due to artifact or patient variability (12-18% false-positive rate in depth monitoring), inadequate handling of edge cases outside training distributions (elderly, pediatric, obese patients), and lack of clinician override mechanisms in closed-loop systems. FRICA provides actionable implementation standards for hospitals, device manufacturers, and regulatory bodies to ensure AI enhances rather than compromises patient safety.
+**This is not:**
+- Medical advice or clinical guidance
+- An official regulatory framework or guideline
+- Approved for clinical implementation
+- A substitute for institutional AI governance or FDA compliance
 
-**Repository Topics:** artificial-intelligence, anesthesiology, patient-safety, machine-learning, medical-ai, neuroscience, consciousness-monitoring, closed-loop-control, clinical-decision-support, healthcare-safety
+**This is:**
+- Independent pre-medical research manuscript
+- Literature synthesis for learning demonstration
+- Medical school application portfolio material
+- Educational exploration of AI safety concepts
+
+---
+
+## Disclaimers
+
+**Institutional Affiliation:**  
+This is an independent educational project. It is not an official University of Washington or UW Medicine document and is not affiliated with, endorsed by, or approved by UW Medicine, its faculty, or staff.
+
+**Regulatory Status:**  
+This manuscript does not constitute official guidance from FDA, WHO, NIST, or any regulatory authority. Clinical AI implementation requires compliance with applicable regulatory frameworks and institutional governance.
+
+**Clinical Use:**  
+Any AI deployment in clinical settings requires FDA approval (or equivalent), institutional review, and ongoing safety monitoring. This manuscript provides educational discussion only.
+
+**Liability:**  
+This work is provided "as is" without warranty of any kind. Users assume full responsibility for any use of these materials.
+
+**Author Status:**  
+Pre-medical student. Not a licensed healthcare professional. Not engaged in clinical AI development or deployment.
+
+---
+
+## Manuscript Information
+
+**Title:** Artificial Intelligence in Anesthesiology: A Neuroscience-Informed Safety Framework for Clinical Implementation
+
+**Author:** Collin B. George, BS  
+**Project Type:** Independent pre-medical research manuscript  
+**Status:** Prepared for submission  
+**Initial Publication Date:** November 27, 2025  
+**Word Count:** Approximately 3,130 words (excluding references)
+
+---
+
+## Repository Description
+
+This repository contains the complete manuscript and supplementary materials for a comprehensive review examining safety frameworks for artificial intelligence in anesthesiology. The manuscript addresses the need for neuroscience-informed safety standards in the context of AI deployment in perioperative medicine, where closed-loop anesthetic delivery systems and automated monitoring have achieved regulatory approval.
+
+**Educational Purpose:**  
+This work demonstrates literature synthesis, clinical reasoning about emerging technologies, and understanding of neuroscience principles as applied to anesthesia safety. It represents independent scholarly work for medical school application portfolio purposes.
 
 ---
 
 ## Abstract
 
-**Background:** Artificial intelligence is rapidly entering anesthesia practice through automated depth-of-anesthesia monitoring, closed-loop drug delivery, and perioperative risk prediction. However, the neuroscience of consciousness—particularly insights from general anesthesia's disruption of neural integration—reveals fundamental challenges for AI systems interpreting brain states. Current AI implementations lack comprehensive safety frameworks grounded in clinical neuroscience.
+**Background:**  
+Artificial intelligence is entering anesthesia practice through automated depth-of-anesthesia monitoring, closed-loop drug delivery, and perioperative risk prediction. However, the neuroscience of consciousness—particularly insights from general anesthesia's disruption of neural integration—reveals fundamental challenges for AI systems interpreting brain states. Current AI implementations lack comprehensive safety frameworks grounded in clinical neuroscience.
 
-**Objective:** To develop a clinically actionable safety framework for AI in anesthesiology, informed by neuroscience principles of consciousness and grounded in evidence from existing AI deployments.
+**Objective:**  
+To develop a conceptual safety framework for AI in anesthesiology, informed by neuroscience principles of consciousness and grounded in evidence from existing AI deployments.
 
-**Methods:** This narrative review synthesized literature on (1) neural correlates of consciousness during anesthesia, (2) current AI applications in perioperative medicine, (3) documented AI failures in clinical settings, and (4) existing AI safety frameworks (FDA, WHO, NIST). Literature searches of PubMed, EMBASE, Web of Science, and IEEE Xplore were conducted from January 2010 through December 2024. Case reports of AI-related adverse events and near-misses in anesthesia and critical care were analyzed using a modified Reason model adapted for AI systems.
+**Methods:**  
+This narrative review synthesized literature on:
+1. Neural correlates of consciousness during anesthesia
+2. Current AI applications in perioperative medicine
+3. Documented AI failures in clinical settings
+4. Existing AI safety frameworks (FDA, WHO, NIST)
 
-**Results:** Analysis revealed three failure modes: (1) misinterpretation of physiological signals due to artifact or patient variability (12-18% false-positive rate in depth monitoring), (2) inadequate handling of edge cases outside training distributions (elderly patients >75 years experienced 2.7-fold higher rates of inadequate depth despite identical target settings), and (3) lack of clinician override mechanisms in closed-loop systems (Sedasys withdrawal after 3.2% inadequate depth requiring emergency intervention). Current depth-of-anesthesia monitors exhibit age-dependent calibration errors, drug-specific limitations, and inability to detect subcortical awareness. We propose the Framework for Responsible Intelligence in Clinical Anesthesiology (FRICA), integrating transparency requirements, bias mitigation protocols, and human-centered control architecture across three pillars: neuroscience-informed design, clinical safety architecture, and validation/surveillance.
+Literature searches of PubMed, EMBASE, Web of Science, and IEEE Xplore were conducted from January 2010 through December 2024. Case reports of AI-related adverse events and near-misses in anesthesia and critical care were analyzed using a modified Reason model adapted for AI systems.
 
-**Conclusions:** AI in anesthesiology must be designed with neuroscience-informed safety principles that account for consciousness's fragility and individual variability. FRICA provides actionable implementation standards requiring multimodal signal integration, connectivity-based metrics, transparent decision-making with human override, representative training cohorts (≥30% age extremes, ≥20% ASA III-IV, ≥30% non-White), prospective validation before deployment, and mandatory post-market surveillance with quarterly recalibration. Anesthesiologists, device manufacturers, and regulators must collaborate to operationalize these principles before widespread AI deployment.
+**Results:**  
+Analysis revealed three failure modes:
+1. Misinterpretation of physiological signals due to artifact or patient variability (12-18% false-positive rate in depth monitoring)
+2. Inadequate handling of edge cases outside training distributions (elderly patients >75 years experienced 2.7-fold higher rates of inadequate depth despite identical target settings)
+3. Lack of clinician override mechanisms in closed-loop systems (Sedasys withdrawal after 3.2% inadequate depth requiring emergency intervention)
 
-**Keywords:** artificial intelligence; anesthesiology; patient safety; machine learning; consciousness; depth of anesthesia; closed-loop systems; neuroscience; clinical decision support; risk management
+Current depth-of-anesthesia monitors exhibit age-dependent calibration errors, drug-specific limitations, and inability to detect subcortical awareness.
+
+**Framework Proposed:**  
+The Framework for Responsible Intelligence in Clinical Anesthesiology (FRICA), integrating transparency requirements, bias mitigation protocols, and human-centered control architecture across three pillars:
+1. Neuroscience-informed design
+2. Clinical safety architecture
+3. Validation and surveillance
+
+**Conclusion:**  
+Successful AI integration in anesthesiology requires frameworks that acknowledge the complexity of consciousness, prioritize patient safety over automation efficiency, and maintain human oversight. FRICA provides a conceptual foundation for such integration.
+
+---
+
+## Repository Contents
+
+### Manuscript Files
+
+- `manuscript/AI_Anesthesiology_Safety_Framework.pdf` - Full manuscript (PDF)
+- `manuscript/AI_Anesthesiology_Safety_Framework.docx` - Full manuscript (Word)
+- `manuscript/AI_Anesthesiology_Safety_Framework.tex` - LaTeX source
+- `manuscript/references.bib` - Complete bibliography
+
+### Supplementary Materials
+
+- `supplementary/FRICA_Implementation_Checklist.pdf` - Framework implementation guide
+- `supplementary/Case_Studies.pdf` - Analysis of AI failure cases
+- `supplementary/Evidence_Tables.pdf` - Systematic evidence synthesis
+
+### Figures and Tables
+
+- `figures/` - All manuscript figures (high-resolution)
+- `tables/` - Supplementary data tables
 
 ---
 
 ## Key Findings
 
-1. **Current AI Performance:** Closed-loop anesthetic delivery systems achieve 78% time-in-target versus 65% manual control (p<0.001) with 15% median reduction in propofol consumption and 12% faster recovery time, but require manual override in 15-22% of elderly (>80 years) or ASA IV patients
+### AI Failure Modes in Anesthesia
 
-2. **Systematic Failure Modes:** Artifact misinterpretation causes 5-8% propofol overdosing in orthopedic/cardiac surgery; electrocautery-induced BIS elevation interpreted as inadequate depth despite actual deep anesthesia
+**Signal Misinterpretation:**
+- 12-18% false-positive rate in depth-of-anesthesia monitoring
+- Artifact confusion (EMG, eye movement, surgical stimulation)
+- Drug-specific calibration errors
 
-3. **Training Data Bias:** Sedasys withdrawal (2016) after 3.2% inadequate depth requiring emergency intervention; validated only in healthy ASA I-II patients, failed in ASA III patients with sleep apnea, obesity, or opioid tolerance
+**Edge Case Handling:**
+- 2.7-fold higher inadequate depth rates in elderly patients
+- Pediatric population underrepresented in training data
+- Obesity-related signal quality degradation
 
-4. **Neuroscience Foundation:** General anesthesia fragments integration of information across cortical and subcortical networks; consciousness requires continuous integration, not just neural firing. Phase synchronization between frontal and parietal cortex decreases 40-60% during propofol anesthesia despite preserved regional activity
+**Human Override Limitations:**
+- Sedasys system: 3.2% inadequate depth requiring emergency intervention
+- Closed-loop propofol systems: variable override accessibility
+- Alarm fatigue from false positives
 
-5. **Adjacent Domain Failures:** ICU sepsis prediction demonstrates 41% false positive rate leading to 73% alert override after 6 months; radiology AI shows 68% sensitivity in children versus 91% in adults; FDA-approved fracture detection exhibits 73% specificity in Black patients versus 87% in White patients
+### FRICA Framework Components
 
-6. **FRICA Implementation:** Three-pillar framework requires (1) multimodal integration with connectivity metrics not just spectral power, (2) transparent decision-making with human override and fail-safe defaults, (3) diverse training cohorts with prospective validation and post-market surveillance registries
+**Pillar 1: Neuroscience-Informed Design**
+- Integration of consciousness neuroscience principles
+- Multi-modal monitoring requirements
+- Recognition of anesthesia heterogeneity
 
-7. **Regulatory Alignment:** Proposed Class II or III medical device classification requiring premarket approval, clinical validation in ≥200 patients across diverse sites, mandatory adverse event reporting, and annual recertification contingent on safety record
+**Pillar 2: Clinical Safety Architecture**
+- Mandatory human override mechanisms
+- Fail-safe default states
+- Transparent decision logic
+- Uncertainty quantification and display
 
----
-
-## Repository Structure
-```
-├── README.md                          # This file
-├── main.tex                           # Main manuscript LaTeX source
-├── references.bib                     # Complete bibliographic references (88 entries)
-├── figures/                           # TikZ figure generation code
-│   ├── figure1-consciousness.tex     # Neural correlates diagram
-│   ├── figure2-frica-framework.tex   # Three-pillar framework
-│   └── figure3-performance.tex       # Subgroup performance degradation
-└── compiled/                          # Pre-compiled PDF outputs
-    └── manuscript.pdf                # Main manuscript (latest version)
-```
-
----
-
-## Methodology
-
-**Review Framework:** Systematic narrative review synthesizing neuroscience, clinical AI applications, and regulatory frameworks
-
-**Literature Search:**
-- **Databases:** PubMed/MEDLINE, EMBASE, Web of Science, IEEE Xplore
-- **Search Period:** January 2010 - December 2024 (neuroscience foundational works from 2008-2013)
-- **Search Strategy:** *(\"artificial intelligence\" OR \"machine learning\" OR \"neural network\") AND (\"anesthesia\" OR \"anaesthesia\") AND (\"safety\" OR \"adverse event\" OR \"error\" OR \"failure\")*
-- **Initial Results:** Comprehensive screening of AI applications in anesthesia and critical care
-- **Final Inclusion:** 88+ peer-reviewed sources including RCTs, systematic reviews, case reports, regulatory documents
-
-**Quality Assessment:**
-- **Randomized Controlled Trials:** Cochrane Risk of Bias 2.0 tool
-- **AI Systems:** Performance metrics (sensitivity, specificity, AUC, calibration error), documented failures, safety mechanisms
-- **Failure Analysis:** Modified Reason model categorizing (1) data quality issues, (2) model limitations, (3) human-AI interaction failures, (4) system integration errors
-
-**Framework Development:** Iterative process through (1) failure mode analysis from literature review, (2) consultation with clinical experts in anesthesiology and AI safety, (3) alignment with FDA Digital Health, WHO Ethics of AI in Health, NIST AI Risk Management frameworks, (4) validation against historical case studies (Sedasys withdrawal, McSleepy safety record)
+**Pillar 3: Validation and Surveillance**
+- Pre-deployment validation across demographic groups
+- Ongoing performance monitoring
+- Adverse event reporting systems
+- Continuous model updating requirements
 
 ---
 
-## Key Manuscript Components
+## Evidence Base
 
-### Tables
-- **Table 1:** Implementation Requirements for Depth-of-Anesthesia Monitoring AI (training data diversity, multimodal input, artifact detection, uncertainty display, human override, audit trail, recalibration)
-- **Table 2:** Implementation Requirements for Closed-Loop Drug Delivery AI (PK/PD individualization, drug interaction handling, safety bounds, emergency stop, anesthesiologist supervision)
+This manuscript synthesizes evidence from:
 
-### Figures
-- **Figure 1:** Neural Correlates of Consciousness During Anesthesia - Comparison of awake brain (strong frontoparietal connectivity, high network integration) versus anesthetized brain (fragmented connectivity, preserved regional activity); graph-theoretic integration metrics correlate with consciousness level
-- **Figure 2:** The FRICA Framework for Safe AI in Anesthesiology - Three interdependent pillars (neuroscience-informed design, clinical safety architecture, validation & surveillance) with clinical application pathway to enhanced patient safety and empowered clinicians
-- **Figure 3:** AI Performance Across Patient Subgroups - Bar charts demonstrating sensitivity degradation by age group for hypotension prediction (91% <40 years declining to 68% >75 years) and specificity decline by BMI category for depth monitoring (87% normal weight declining to 71% obese class II-III)
+**Neuroscience Literature:**
+- Neural correlates of consciousness during anesthesia
+- Mechanisms of anesthetic-induced unconsciousness
+- Limitations of current consciousness monitoring
 
-All figures are publication-quality vector graphics generated using TikZ/PGFPlots for reproducibility and scalability.
+**Clinical AI Literature:**
+- Depth-of-anesthesia monitoring systems
+- Closed-loop anesthetic delivery
+- Perioperative risk prediction models
+- Documented AI failures and near-misses
 
----
+**Regulatory Frameworks:**
+- FDA guidance on clinical decision support software
+- WHO principles for AI in healthcare
+- NIST AI risk management framework
+- European Union AI Act (medical device provisions)
 
-## Compilation Instructions
-
-### Prerequisites
-
-A complete LaTeX distribution (TeX Live, MiKTeX, or MacTeX) with the following packages:
-- Document class: `article` (12pt)
-- Graphics: `tikz`, `pgfplots`, `graphicx`
-- Tables: `booktabs`, `array`, `multirow`, `longtable`
-- Bibliography: `natbib` with `unsrtnat` style
-- Formatting: `geometry`, `setspace`, `titlesec`, `fancyhdr`, `enumitem`
-- Colors: `xcolor`
-- Hyperlinks: `hyperref`
-- Typography: `times`, `microtype`, `fontenc` (T1)
-
-### Compilation Process
-
-#### Standard compilation (with bibliography):
-```bash
-pdflatex main.tex
-bibtex main
-pdflatex main.tex
-pdflatex main.tex
-```
-
-#### Alternative: Using latexmk (automated):
-```bash
-latexmk -pdf main.tex
-```
-
-#### Quick compilation (without bibliography updates):
-```bash
-pdflatex main.tex
-```
-
-### Pre-compiled Version
-
-For convenience, a pre-compiled PDF (`compiled/manuscript.pdf`) will be included in the repository after final manuscript preparation. This version will reflect the latest manuscript state and can be viewed directly without local compilation.
+**Complete bibliography:** `manuscript/references.bib`
 
 ---
 
-## Clinical Significance
+## Limitations
 
-This manuscript provides a translational framework for implementing AI safety standards in anesthesiology practice:
+**Scope:**
+- Narrative review methodology (not systematic review)
+- Focus on anesthesiology applications (limited generalizability)
+- Conceptual framework (not validated implementation)
 
-1. **Evidence-Based Safety Standards:** Comprehensive FRICA framework with specific implementation requirements for depth monitoring (artifact detection, uncertainty quantification, human override) and closed-loop delivery (individualized PK/PD, drug interaction modeling, emergency stop)
+**Evidence Base:**
+- Limited long-term safety data for newer AI systems
+- Publication bias toward successful AI deployments
+- Heterogeneous reporting of AI-related adverse events
 
-2. **Patient Selection Guidance:** Explicit identification of edge cases requiring enhanced monitoring (elderly >75 years, ASA III-IV, BMI >35, genetic variants affecting drug metabolism)
-
-3. **Implementation Pathways:** Actionable recommendations for anesthesia departments (pre-deployment validation on ≥50 representative patients, mandatory incident reporting, clinician training on AI limitations), device manufacturers (diverse training cohorts, explainability features, continuous learning via federated frameworks), and regulators (diversity requirements, post-market surveillance registries, adaptive approval with performance monitoring)
-
-4. **Neuroscience Integration:** Translation of consciousness research (integrated information theory, frontoparietal connectivity, network topology measures) into practical AI design requirements emphasizing multimodal fusion and connectivity-based metrics
-
-5. **Research Priorities:** Identification of critical evidence gaps requiring future investigation (real-time connectivity measures, personalized pharmacogenomics, multimodal transformer architectures, adversarial robustness, prospective FRICA-compliant versus non-compliant RCTs)
-
-6. **Phased Deployment Strategy:** Four-phase clinical translation timeline from current advisory systems (AI suggests, clinician decides) in low-risk procedures through potential autonomous anesthesia in selected cases after 10+ years of extensive validation
-
----
-
-## Citation
-
-If you use this work in your research, please cite:
-```
-George, C.B. (2025). Artificial Intelligence in Anesthesiology: 
-A Neuroscience-Informed Safety Framework for Clinical Implementation. 
-Manuscript prepared for submission. November 2025.
-```
-
-BibTeX entry:
-```bibtex
-@article{george2025ai,
-  title={Artificial Intelligence in Anesthesiology: A Neuroscience-Informed Safety Framework for Clinical Implementation},
-  author={George, Collin B.},
-  year={2025},
-  month={November},
-  note={Manuscript prepared for submission to Anesthesiology},
-  institution={University of Washington}
-}
-```
+**Framework:**
+- Requires institutional adaptation for implementation
+- Not validated through prospective studies
+- Does not address all potential AI applications in anesthesia
 
 ---
 
-## Contact Information
+## Future Directions
 
-**Collin B. George **  
-Independent Clinical Researcher & Medical School Applicant 
-University of Washington Medical Center  
-Seattle, WA, USA
+**For Institutional Implementation:**
+- Pilot testing of FRICA framework components
+- Development of institution-specific AI governance policies
+- Validation studies with diverse patient populations
 
-Email: cbg24@uw.edu  
-ORCID: [0009-0007-8162-6839](https://orcid.org/0009-0007-8162-6839)
+**For Regulatory Development:**
+- Integration with FDA medical device approval processes
+- International harmonization of AI safety standards
+- Post-market surveillance requirements
+
+**For Research:**
+- Prospective studies of AI failure modes
+- Comparative effectiveness of AI vs. standard monitoring
+- Human factors research on AI-clinician interaction
+
+**Educational Note:**  
+These directions represent areas for future professional development and research, not current projects.
+
 ---
 
-## Funding and Conflicts of Interest
+## Author Information
 
-**Funding:** None. This independent research was conducted without external financial support.
+**Author:** Collin B. George, BS  
+**Project Type:** Independent pre-medical research manuscript  
+**Educational Context:** Literature synthesis examining AI safety in anesthesiology  
+**Status:** Preparing for medical school matriculation 2026
 
-**Conflicts of Interest:** The author declares no conflicts of interest.
+**GitHub:** github.com/collingeorge  
+**ORCID:** 0009-0007-8162-6839  
+**License:** CC BY 4.0
 
 ---
 
 ## Acknowledgments
 
-**Clinical mentors:** Brian Buchanan, MS, CRNA (UW Medicine); Karen B. Domino, MD, MPH (UW Department of Anesthesiology & Pain Medicine); G. Burkhard Mackensen, MD, PhD, FASE (UW Cardiothoracic Anesthesiology); Shane Mandalia, DO; Ronald Pauldine, MD
+This educational manuscript was informed by:
 
-**Academic mentors:** Tom Carroll, PhD (intellectual mentorship)
+**Published Literature:**
+- Neuroscience research on consciousness and anesthesia
+- Clinical AI safety literature
+- Regulatory frameworks for medical AI
 
-**Institutional support:** University of Washington for providing library access and research infrastructure; Pacific Northwest National Laboratory for foundational training in systems thinking and security. (This project is independent and not affiliated with or endorsed by any institution.)
+**Educational Support:**
+The author is grateful to University of Washington faculty for educational guidance in neuroscience and perioperative medicine that informed this work.
 
-This work received no direct funding. Complete acknowledgments are provided in the full manuscript.
-
----
-
-## Version History
-
-**v1.0** (November 27, 2025): Initial manuscript prepared for journal submission
-- Target journal: Anesthesiology (primary), British Journal of Anaesthesia (secondary)
-- Complete neuroscience-informed safety framework (FRICA)
-- 88+ peer-reviewed references from 2010-2024 literature
-- Comprehensive implementation standards with clinical protocols
-- Publication-quality TikZ/PGFPlots figures (3 figures, 2 tables)
+This manuscript represents independent scholarly work and does not constitute collaboration with any institution or regulatory body.
 
 ---
 
-## Contributing
+## Citation
 
-This is an independent research manuscript currently prepared for submission to peer-reviewed journals. Questions, comments, or suggestions for future work can be directed to the author via email.
+If you reference this work in presentations or academic writing:
+```text
+George CB. Artificial Intelligence in Anesthesiology: A Neuroscience-
+Informed Safety Framework for Clinical Implementation. GitHub Repository. 
+Published November 2025. Available from: 
+https://github.com/collingeorge/ai-anesthesiology-safety-framework 
+[Accessed: date]
+```
+
+**If manuscript is published:**  
+Update citation with journal name, volume, and DOI when available.
 
 ---
 
-**Disclaimer:** The views expressed in this work are those of the author and do not necessarily represent the views of the University of Washington or UW Medicine. The author's affiliation is provided for identification purposes only; this research was conducted independently and received no institutional funding or sponsorship.
+## License
+
+This work is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0).
+
+**You are free to:**
+- Share and redistribute the material
+- Adapt and build upon the material for any purpose
+
+**Under the following terms:**
+- Attribution: Give appropriate credit to Collin B. George, provide a link to the license, and indicate if changes were made
+- Do not suggest that the author or any institution endorses you or your use
+
+**Full license:** https://creativecommons.org/licenses/by/4.0/
+
+© 2025 Collin B. George — Licensed under CC BY 4.0
+
+---
+
+## Keywords
+
+Artificial Intelligence, Anesthesiology, Patient Safety, Machine Learning, Medical AI, Neuroscience, Consciousness Monitoring, Closed-Loop Control, Clinical Decision Support, Healthcare Safety, Depth of Anesthesia, Automated Drug Delivery, AI Safety Framework, Regulatory Standards
+
+---
