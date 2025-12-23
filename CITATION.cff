@@ -1,0 +1,29 @@
+cff-version: 1.2.0
+title: "Artificial Intelligence in Anesthesiology: A Neuroscience-Informed Safety Framework for Clinical Implementation"
+message: "If you use this repository, please cite it using the information below."
+type: article
+authors:
+  - family-names: George
+    given-names: Collin B.
+    orcid: "https://orcid.org/0009-0007-8162-6839"
+    affiliation: "University of Washington"
+version: "1.0"
+date-released: "2025-11-27"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/collingeorge/ai-anesthesiology-safety-framework"
+abstract: >
+  Comprehensive review examining safety frameworks for artificial intelligence
+  in anesthesiology. Addresses AI deployment challenges in perioperative medicine
+  through neuroscience-informed framework (FRICA) integrating transparency requirements,
+  bias mitigation, and human-centered control. Approximately 3,130 words. Educational
+  pre-medical research manuscript.
+keywords:
+  - artificial intelligence
+  - anesthesiology
+  - patient safety
+  - machine learning
+  - consciousness monitoring
+  - closed-loop control
+  - AI safety framework
+  - neuroscience
+  - pre-medical research
